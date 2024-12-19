@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #00a733; 
+    background-image: url('headwall.jpg'); /* Путь к текстуре */
+    background-size: cover; /* ОТкрыть текстуру нв весь элмент */
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 20px; 
+}
+
+.header-content {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.image-dir {
+    flex-shrink: 0; /* Запрет на сжатие изображения */
+    margin-right: 20px; /* Отступ справа от изображения */
+}
+
+.image {
+    max-width: 100px; /* Ограничиваем ширину изображения */
+    height: auto; /* Сохраняем пропорции изображения */
+}
+
+.text {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.head-ssylki {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 10px; 
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; 
+    transition: opacity 0.5s ease;
+}
+
+.nav-buttons {
+    margin-left: auto; 
+}
+
+.head-ssylki a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.head-ssylki a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button {
+    background-color: #ff3f3f;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: black;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #69b6bd;
+}
+
+.history, .spec {
+    background-color: white;
+    padding: 20px;
+    margin: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.spec_ssylki {
+	display: grid; 
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+	gap: 15px; 
+	margin-top: 20px; 
+}
+
+.tile {
+	position: relative; 
+	overflow: hidden; 
+	border-radius: 10px; /* Закругление углов */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для плиток */
+	transition: transform 0.3s; /* Плавный переход при наведении */
+}
+
+.tile:hover {
+	transform: scale(1.05); /* Увеличение плитки при наведении */
+}
+
+.tile img {
+	width: 100%; 
+	height: auto; 
+	display: block; 
+}
+
+.tile-text {
+	position: absolute;
+	bottom: 0; 
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.7); 
+	color: white; 
+	padding: 10px; 
+	text-align: center; 
+	transition: background-color 0.3s;
+}
+
+.tile:hover .tile-text {
+	background-color: rgba(0, 0, 0, 0.9); 
+}
+
+.spec_ssylki a {
+	text-decoration: none; 
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #73ebf5;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #69b6bd;
+}
+
+#subscribe-response {
+    margin-top: 10px;
+    color: #333;
+}
